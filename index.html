@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genrate randome colour on webpage</title>
+    <link rel="stylesheet" href="watch_color.css">
+</head>
+<body>
+
+    <div class="tems_container" id="watch1">
+        <div class="watch">
+         
+            
+            <div id="ampm">
+                <div id="hours"class="same">0</div>
+                <div id="minut"class="same1">0</div>
+                <div id="second"class="same2">0</div>
+            </div>
+        </div>
+        <div class="watch" id="stopewatch">
+            <div id="start"></div>
+            <div id="start-buttun">
+                <button id="start-btn">start</button>
+                <button id="stop-btn">stop</button>
+            </div>
+
+        </div>
+        <div class="watch">
+          <div id="settime">settime</div>
+
+        </div>
+         
+    </div>
+
+    <audio src="tic-tac-81751.mp3" id="audio" preload="auto"></audio>
+    <button onclick="startsound();" class="bt1">play</button>
+        <button onclick="stopSound();" class="bt1">stop</button>
+    
+ <script src="watch.js"> </script>
+</body>
+</html>
