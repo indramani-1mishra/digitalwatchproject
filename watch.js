@@ -98,3 +98,46 @@ function stopSound()
         clearInterval(inervalid);
     }
 }
+
+let scounter = 0;
+let mcounter = 0; 
+let hcounter = 0;
+let intervelc;
+function startime()
+{
+document.getElementById('second1').innerHTML=scounter;
+document.getElementById('minut1').innerHTML=mcounter;
+document.getElementById('hours1').innerHTML=hcounter;
+
+scounter++;
+if(scounter<10){
+    document.getElementById('second1').innerHTML='0'+scounter;
+}
+if(scounter===60)
+{
+  scounter=0;
+  mcounter++;
+  if(mcounter===60)
+  {
+    mcounter=0;
+  hcounter++;
+  }
+}
+
+}
+
+function settimer()
+{
+    intervelc= setInterval(startime,1000);
+}
+
+
+function stoptime()
+{
+
+   
+    if(intervelc)
+        {
+            clearInterval(intervelc);
+        }
+}
