@@ -109,14 +109,24 @@ document.getElementById('second1').innerHTML=scounter;
 document.getElementById('minut1').innerHTML=mcounter;
 document.getElementById('hours1').innerHTML=hcounter;
 
+
+if(mcounter<10){
+    document.getElementById('minut1').innerHTML='0'+mcounter;
+}
+
+if(hcounter<10){
+    document.getElementById('hours1').innerHTML='0'+hcounter;
+}
 scounter++;
 if(scounter<10){
     document.getElementById('second1').innerHTML='0'+scounter;
 }
+
 if(scounter===60)
 {
   scounter=0;
   mcounter++;
+ 
   if(mcounter===60)
   {
     mcounter=0;
@@ -134,10 +144,75 @@ function settimer()
 
 function stoptime()
 {
+if(intervelc)
+{
+ clearInterval(intervelc);
+        
+}
+}
 
-   
-    if(intervelc)
-        {
-            clearInterval(intervelc);
+
+let timer;
+
+// Function to start the countdown
+function startCountdown() {
+    // Get values from the input fields
+    let hhh1 = document.getElementById("hhh").querySelector("input").value;
+    let mmm1 = document.getElementById("mmm").querySelector("input").value;
+    let sss1 = document.getElementById("sss").querySelector("input").value;
+
+    // Convert string values to numbers
+    let hours = parseInt(hhh1);
+    let minutes = parseInt(mmm1);
+    let seconds = parseInt(sss1);
+
+    // Check if any value is NaN and set it to 0 if invalid
+    if (isNaN(hours)) {
+        hours = 0;
+    }
+    if (isNaN(minutes)) {
+        minutes = 0;
+    }
+    if (isNaN(seconds)) {
+        seconds = 0;
+    }
+
+    console.log(`Countdown started with ${hours} hours, ${minutes} minutes, ${seconds} seconds`);
+
+    // Start the countdown
+    timer = setInterval(function () {
+        seconds--;
+
+        if (seconds < 0) {
+            seconds = 59;
+            minutes--;
+            if (minutes < 0) {
+                minutes = 59;
+                hours--;
+            }
         }
+
+        // Update the input fields with new values
+        document.getElementById('sss').querySelector("input").value = seconds;
+        document.getElementById('mmm').querySelector("input").value = minutes;
+        document.getElementById('hhh').querySelector("input").value = hours;
+
+        // Check if the timer has reached 0
+        if (hours === 0 && minutes === 0 && seconds === 0) {
+            clearInterval(timer);  
+            
+            let jai = document.getElementById('jai');
+            jai.play();   // Trigger the alarm (can be a sound too)
+            alert("jai shree ram  alarm completed successfully");    // Trigger the alarm (can be a sound too)
+        }
+    }, 1000);  // Update every second
+}
+
+// Function to reset the countdown timer
+function resetCountdown() {
+    clearInterval(timer);  // Stop the countdown
+    document.getElementById('hhh').querySelector("input").value = 0;
+    document.getElementById('mmm').querySelector("input").value = 0;
+    document.getElementById('sss').querySelector("input").value = 0;
+    alert("Timer reset.");
 }

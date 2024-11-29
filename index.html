@@ -25,23 +25,43 @@
                 <div id="minut1"class="same12">0</div>
                 <div id="second1"class="same12">0</div>
             </div>
-            <div id="start-buttun">
+            <div class="start-buttun">
 
                 <button id="start-btn" onclick="settimer();">start timer </button>
                 <button id="stop-btn" onclick="stoptime();">stop timer</button>
             </div>
 
         </div>
-        <div class="watch">
-          <div id="settime">settime</div>
-
+          
+    <div class="watch" id="alarm">
+        <div id="display2">
+        <div class="q" id="hhh">
+          <input type="number" min="0" max="60" required value="0"   >
         </div>
-         
+        <div class="q" id="mmm">
+            <input type="number"  min="0" max="60" value="0" >
+        </div>
+        <div class="q" id="sss">
+            <input type="number"  min="0" max="60" value="0">
+            
+        </div>
     </div>
+    <div class="start-buttun" id="bt3">
+        <button id="bt" onclick=" startCountdown();">set alarm</button>
+        <button onclick="resetCountdown();"> reset alarm</button>
 
+    </div>
+    
+        </div>
+        </div>
+       
+
+    
+    
     <audio src="tic-tac-81751.mp3" id="audio" preload="auto"></audio>
     <button onclick="startsound();" class="bt1">play</button>
         <button onclick="stopSound();" class="bt1">stop</button>
+        <audio src="jai-shree-ram-notification-ringtone-tone-60275.mp3" id="jai" preload="auto"></audio>
     
  <script src="watch.js"> </script>
 </body>

@@ -258,7 +258,7 @@
     border:2px solid sienna
     
 }
-#start-buttun
+.start-buttun
 {
     height:20%;
     width:70%;
@@ -267,7 +267,7 @@
     align-items:center;
     border:3px solid gray;
 }
-#start-buttun>button
+.start-buttun>button
 {
     padding:13px;
     width:100px;
@@ -287,6 +287,576 @@
     
     
 }
+option
+{
+
+height: 100px; /* Fixed height */
+overflow-y: scroll; /* Vertical scrolling */
+padding: 5px; /* Padding for inner spacing */
+}
+
+#alarm
+{
+display:block;
+    
+}
+#display2{
+    position:relative;
+    top:10%;
+    left:10%;
+    display:flex;
+    justify-content:space-around;
+    margin:20px;
+    height:120px;
+    width:70%;
+    color:wheat;
+    font-weight:bold;
+    font-size:30px;
+    align-items:center;
+    border-radius:10px;
+    background-color:#524334;
+    border:2px solid aliceblue;
+    
+}
+#button_container
+{
+    position:relative;
+    top:20%;;
+    display:flex;
+    justify-content:space-around;
+    margin:20px;
+    height:100px;
+    color:wheat;
+    font-weight:bold;
+    font-size:30px;
+    align-items:center;
+    border-radius:10px;
+    background-color:#dac8b4;
+    border:2px solid aliceblue;
+}
+#display2 div:nth-child(1) {
+    background-color: #dac8b4;
+}
+#display2 div:nth-child(3),
+#display2 div:nth-child(3), 
+#display2 div:nth-child(1)
+{
+     
+}
+   
+
+#display2 div:nth-child(1)>input,#display2 div:nth-child(2)>input,#display2 div:nth-child(3)>input{
+
+
+    height:55px;
+    width:55px;
+    background-color:#2fa767;
+    border-radius:10px;
+    border:none;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    box-shadow:0px 0px 7px 6px #cbe9e9;
+    
+    
+}
+#bt3{
+    position:relative;
+    top:20%;
+    left:15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
